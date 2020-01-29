@@ -10,6 +10,11 @@ pipeline{
             //    sh "terraform 0.12upgrade -yes"
                 }
         }
+      stage('Terraform Plan') {
+            steps{
+                sh "terraform plan"
+            }
+        }
               
     }
  }
